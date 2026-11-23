@@ -1,0 +1,51 @@
+﻿{
+    "main":  "./dist/index.js",
+    "engines":  {
+                    "node":  "^22.12.0 || ^24.0.0"
+                },
+    "scripts":  {
+                    "demo":  "npm run build \u0026\u0026 node ./scripts/demo.mjs",
+                    "build":  "tsup",
+                    "typecheck":  "tsc --noEmit",
+                    "test":  "vitest run"
+                },
+    "bin":  {
+                "docprobe":  "./dist/cli/index.js"
+            },
+    "dependencies":  {
+                         "commander":  "^13.1.0",
+                         "zod":  "^3.24.2"
+                     },
+    "homepage":  "https://github.com/flower1201/docprobe#readme",
+    "type":  "module",
+    "devDependencies":  {
+                            "typescript":  "^5.8.2",
+                            "@types/node":  "^22.13.10",
+                            "vitest":  "^3.0.9",
+                            "tsup":  "^8.4.0"
+                        },
+    "keywords":  [
+                     "cli",
+                     "developer-tools",
+                     "typescript",
+                     "local-first",
+                     "ai-coding"
+                 ],
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/flower1201/docprobe.git"
+                   },
+    "description":  "Local-first markdown link probe with agent-readable reports.",
+    "license":  "MIT",
+    "files":  [
+                  "dist",
+                  "LICENSE",
+                  "README.md"
+              ],
+    "version":  "0.1.0-rc.1",
+    "types":  "./dist/index.d.ts",
+    "bugs":  {
+                 "url":  "https://github.com/flower1201/docprobe/issues"
+             },
+    "name":  "docprobe"
+}
